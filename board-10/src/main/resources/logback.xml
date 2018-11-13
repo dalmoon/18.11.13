@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<include resource="log/console.xml" />
+	<include resource="log/file.xml" />
+
+	<logger name="org.springframework.data" level="error" />
+
+	<root level="error">
+		<appender-ref ref="console" />
+		<appender-ref ref="dailyRollingFileAppender"/>
+	</root>
+
+</configuration>
